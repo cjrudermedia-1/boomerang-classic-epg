@@ -1,0 +1,285 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tv generator-info-name="jpuffle5-boomerang-fandom-epg" generator-info-url="https://raw.githubusercontent.com/cjrudermedia-1/boomerang-classic-epg/main/epg.xml">
+  <channel id="boomerang-classic-jpuffle5">
+    <display-name>Boomerang Classic</display-name>
+    <icon src="http://drewlive2423.duckdns.org:9000/Logos/Boomerang.png" />
+  </channel>
+  <programme start="20260615130000 -0500" stop="20260615133000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Huckleberry Hound</title>
+    <sub-title lang="en">Rustler Hustler Huck / Pony Boy Huck / Sir Huckleberry Hound</sub-title>
+    <desc lang="en">Rustler Hustler Huck / Pony Boy Huck / Sir Huckleberry Hound</desc>
+  </programme>
+  <programme start="20260615133000 -0500" stop="20260615140000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">The Looney Tunes Show</title>
+    <sub-title lang="en">Beauty School</sub-title>
+    <desc lang="en">Beauty School</desc>
+  </programme>
+  <programme start="20260615140000 -0500" stop="20260615143000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Heathcliff and the Catillac Cats</title>
+    <sub-title lang="en">Family Tree / Who's Got the Chocolate</sub-title>
+    <desc lang="en">Family Tree / Who's Got the Chocolate</desc>
+  </programme>
+  <programme start="20260615143000 -0500" stop="20260615150000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">The Flintstones</title>
+    <sub-title lang="en">The Happy Household</sub-title>
+    <desc lang="en">The Happy Household</desc>
+  </programme>
+  <programme start="20260615150000 -0500" stop="20260615170000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Open Season (2006)</title>
+  </programme>
+  <programme start="20260615170000 -0500" stop="20260615190000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Cloudy with a Chance of Meatballs (2009)</title>
+  </programme>
+  <programme start="20260615190000 -0500" stop="20260615210000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Yogi Bear (2010)</title>
+  </programme>
+  <programme start="20260615210000 -0500" stop="20260615213000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Dragon Ball Z Kai: The Final Chapters</title>
+    <sub-title lang="en">What Happened, Piccolo? An Unexpected Outcome in the First Round</sub-title>
+    <desc lang="en">What Happened, Piccolo? An Unexpected Outcome in the First Round</desc>
+  </programme>
+  <programme start="20260615213000 -0500" stop="20260615220000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">An Eerie Entity Who Exactly Is Spopovitch?</title>
+  </programme>
+  <programme start="20260615220000 -0500" stop="20260615223000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Videl Battered! Gohan's Fury Reaches Its Limit!</title>
+  </programme>
+  <programme start="20260615223000 -0500" stop="20260615230000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">A Creeping Conspiracy! The Target is Gohan</title>
+  </programme>
+  <programme start="20260615230000 -0500" stop="20260615233000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">The Terrifying Secret of the Majin. The Mastermind Revealed!</title>
+  </programme>
+  <programme start="20260615233000 -0500" stop="20260616000000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">The Nefarious Wizard Babidi And Demon King Dabura's Trap</title>
+  </programme>
+  <programme start="20260616000000 -0500" stop="20260616003000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Leo the Lion (Onward, Kimba!)</title>
+    <sub-title lang="en">Panja's Hide</sub-title>
+    <desc lang="en">Panja's Hide</desc>
+  </programme>
+  <programme start="20260616003000 -0500" stop="20260616010000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Underdog</title>
+    <sub-title lang="en">Simon Says "Be My Valentine" (Part 1) / Jail Break / Tale of a Tiger / Simon Says "Be My Valentine" (Part 2)</sub-title>
+    <desc lang="en">Simon Says "Be My Valentine" (Part 1) / Jail Break / Tale of a Tiger / Simon Says "Be My Valentine" (Part 2)</desc>
+  </programme>
+  <programme start="20260616010000 -0500" stop="20260616013000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Simon Says "Be My Valentine" (Part 3) / Kitchen Capers / Seeing Stars / Honey Bees / Simon Says "Be My Valentine" (Part 4)</title>
+  </programme>
+  <programme start="20260616013000 -0500" stop="20260616020000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Space Ghost: Coast to Coast</title>
+    <sub-title lang="en">Brilliant Number Two / Telethon</sub-title>
+    <desc lang="en">Brilliant Number Two / Telethon</desc>
+  </programme>
+  <programme start="20260616020000 -0500" stop="20260616023000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Dimethylpyrimidinol Bisulfite / Joshua</title>
+  </programme>
+  <programme start="20260616023000 -0500" stop="20260616030000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Centurions</title>
+    <sub-title lang="en">Sand Doom</sub-title>
+    <desc lang="en">Sand Doom</desc>
+  </programme>
+  <programme start="20260616030000 -0500" stop="20260616033000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Secret Squirrel</title>
+    <sub-title lang="en">It Stopped Training ∕ Double Trouble ∕ Winnie's Baby</sub-title>
+    <desc lang="en">It Stopped Training ∕ Double Trouble ∕ Winnie's Baby</desc>
+  </programme>
+  <programme start="20260616033000 -0500" stop="20260616040000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Pixie &amp; Dixie</title>
+    <sub-title lang="en">Missile Bound Cat / The Mark of the Mouse / Mouse for Rent</sub-title>
+    <desc lang="en">Missile Bound Cat / The Mark of the Mouse / Mouse for Rent</desc>
+  </programme>
+  <programme start="20260616040000 -0500" stop="20260616043000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">MGM</title>
+    <sub-title lang="en">Homesteader Droopy / Garden Gopher / Symphony In Slang</sub-title>
+    <desc lang="en">Homesteader Droopy / Garden Gopher / Symphony In Slang</desc>
+  </programme>
+  <programme start="20260616043000 -0500" stop="20260616050000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">The Kwicky Koala Show</title>
+    <sub-title lang="en">Robinson Caruso ∕ The Claws Conspiracy ∕ Dirty's Debut</sub-title>
+    <desc lang="en">Robinson Caruso ∕ The Claws Conspiracy ∕ Dirty's Debut</desc>
+  </programme>
+  <programme start="20260616050000 -0500" stop="20260616053000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">The Great Grape Ape</title>
+    <sub-title lang="en">Flying Saucery ∕ There's No Feud Like an Old Feud</sub-title>
+    <desc lang="en">Flying Saucery ∕ There's No Feud Like an Old Feud</desc>
+  </programme>
+  <programme start="20260616053000 -0500" stop="20260616060000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">The New Fred and Barney Show</title>
+    <sub-title lang="en">The Butler Did It...and Did It Better</sub-title>
+    <desc lang="en">The Butler Did It...and Did It Better</desc>
+  </programme>
+  <programme start="20260616060000 -0500" stop="20260616063000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Flintstone Frolics</title>
+  </programme>
+  <programme start="20260616063000 -0500" stop="20260616070000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Pink Panther and Pals</title>
+  </programme>
+  <programme start="20260616070000 -0500" stop="20260616073000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">The Snorks</title>
+  </programme>
+  <programme start="20260616073000 -0500" stop="20260616080000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Looney Tunes</title>
+  </programme>
+  <programme start="20260616080000 -0500" stop="20260616083000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Tom &amp; Jerry</title>
+  </programme>
+  <programme start="20260616083000 -0500" stop="20260616090000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Top Cat</title>
+  </programme>
+  <programme start="20260616090000 -0500" stop="20260616093000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Yogi's Space Race</title>
+  </programme>
+  <programme start="20260616093000 -0500" stop="20260616100000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">The Jetsons</title>
+  </programme>
+  <programme start="20260616100000 -0500" stop="20260616103000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Dexter's Laboratory</title>
+  </programme>
+  <programme start="20260616103000 -0500" stop="20260616110000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Pokémon: Diamond and Pearl</title>
+  </programme>
+  <programme start="20260616110000 -0500" stop="20260616113000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">The Banana Splits</title>
+  </programme>
+  <programme start="20260616113000 -0500" stop="20260616120000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Magilla Gorilla</title>
+  </programme>
+  <programme start="20260616120000 -0500" stop="20260616123000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Quick Draw McGraw</title>
+  </programme>
+  <programme start="20260616123000 -0500" stop="20260616130000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Yogi Bear</title>
+  </programme>
+  <programme start="20260616130000 -0500" stop="20260616133000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Huckleberry Hound</title>
+  </programme>
+  <programme start="20260616133000 -0500" stop="20260616140000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">The Looney Tunes Show</title>
+  </programme>
+  <programme start="20260616140000 -0500" stop="20260616143000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Heathcliff and the Catillac Cats</title>
+  </programme>
+  <programme start="20260616143000 -0500" stop="20260616150000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">The Flintstones</title>
+  </programme>
+  <programme start="20260616150000 -0500" stop="20260616170000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Dr. Suess' The Lorax (2012)</title>
+  </programme>
+  <programme start="20260616170000 -0500" stop="20260616190000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Yogi Bear (2010)</title>
+  </programme>
+  <programme start="20260616190000 -0500" stop="20260616193000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Augie Doggie</title>
+  </programme>
+  <programme start="20260616193000 -0500" stop="20260616200000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Loopy De Loop</title>
+  </programme>
+  <programme start="20260616200000 -0500" stop="20260616203000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Huckleberry Hound</title>
+  </programme>
+  <programme start="20260616203000 -0500" stop="20260616210000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Quick Draw McGraw</title>
+  </programme>
+  <programme start="20260616210000 -0500" stop="20260616213000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Dragon Ball Z Kai: The Final Chapters</title>
+    <sub-title lang="en">Don't Sell Super Saiyans Short! Vegeta and Goku's Full-Bore Power!</sub-title>
+    <desc lang="en">Don't Sell Super Saiyans Short! Vegeta and Goku's Full-Bore Power!</desc>
+  </programme>
+  <programme start="20260616213000 -0500" stop="20260616220000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Whither Victory? A Battle Royal Championship Match!</title>
+  </programme>
+  <programme start="20260616220000 -0500" stop="20260616223000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Stunning Youngsters! No. 18's Uphill Battle</title>
+  </programme>
+  <programme start="20260616223000 -0500" stop="20260616230000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Enter the Headliner! The Looming Demon King!</title>
+  </programme>
+  <programme start="20260616230000 -0500" stop="20260616233000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">A Heart of Evil Awakened Vegeta, Prince of Destruction</title>
+  </programme>
+  <programme start="20260616233000 -0500" stop="20260617000000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">I Am the Strongest! The Clash of Goku vs. Vegeta</title>
+  </programme>
+  <programme start="20260617000000 -0500" stop="20260617003000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Leo the Lion (Onward, Kimba!)</title>
+  </programme>
+  <programme start="20260617003000 -0500" stop="20260617010000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Underdog</title>
+  </programme>
+  <programme start="20260617010000 -0500" stop="20260617013000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Underdog</title>
+  </programme>
+  <programme start="20260617013000 -0500" stop="20260617020000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Powerpuff Girls Z</title>
+  </programme>
+  <programme start="20260617020000 -0500" stop="20260617023000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Powerpuff Girls Z</title>
+  </programme>
+  <programme start="20260617023000 -0500" stop="20260617030000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Centurions</title>
+  </programme>
+  <programme start="20260617030000 -0500" stop="20260617033000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Secret Squirrel</title>
+  </programme>
+  <programme start="20260617033000 -0500" stop="20260617040000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Pixie &amp; Dixie</title>
+  </programme>
+  <programme start="20260617040000 -0500" stop="20260617043000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">MGM</title>
+  </programme>
+  <programme start="20260617043000 -0500" stop="20260617050000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">The Kwicky Koala Show</title>
+  </programme>
+  <programme start="20260617050000 -0500" stop="20260617053000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">The Great Grape Ape</title>
+  </programme>
+  <programme start="20260617053000 -0500" stop="20260617060000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">The New Fred and Barney Show</title>
+  </programme>
+  <programme start="20260617060000 -0500" stop="20260617063000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Flintstone Frolics</title>
+  </programme>
+  <programme start="20260617063000 -0500" stop="20260617070000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Pink Panther and Pals</title>
+  </programme>
+  <programme start="20260617070000 -0500" stop="20260617073000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">The Snorks</title>
+  </programme>
+  <programme start="20260617073000 -0500" stop="20260617080000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Looney Tunes</title>
+  </programme>
+  <programme start="20260617080000 -0500" stop="20260617083000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Tom &amp; Jerry</title>
+  </programme>
+  <programme start="20260617083000 -0500" stop="20260617090000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Top Cat</title>
+  </programme>
+  <programme start="20260617090000 -0500" stop="20260617093000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Yogi's Space Race</title>
+  </programme>
+  <programme start="20260617093000 -0500" stop="20260617100000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">The Jetsons</title>
+  </programme>
+  <programme start="20260617100000 -0500" stop="20260617103000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Dexter's Laboratory</title>
+  </programme>
+  <programme start="20260617103000 -0500" stop="20260617110000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Pokémon: Diamond and Pearl</title>
+  </programme>
+  <programme start="20260617110000 -0500" stop="20260617113000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">The Banana Splits</title>
+  </programme>
+  <programme start="20260617113000 -0500" stop="20260617120000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Magilla Gorilla</title>
+  </programme>
+  <programme start="20260617120000 -0500" stop="20260617123000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Quick Draw McGraw</title>
+  </programme>
+  <programme start="20260617123000 -0500" stop="20260617130000 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Yogi Bear</title>
+  </programme>
+  <programme start="20260617130000 -0500" stop="20260617130855 -0500" channel="boomerang-classic-jpuffle5">
+    <title lang="en">Huckleberry Hound</title>
+  </programme>
+</tv>

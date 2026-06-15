@@ -26,12 +26,18 @@
   </programme>
   <programme start="20260615150000 -0500" stop="20260615170000 -0500" channel="boomerang-classic-jpuffle5">
     <title lang="en">Open Season (2006)</title>
+    <sub-title lang="en">Open Season (2006)</sub-title>
+    <desc lang="en">Open Season (2006)</desc>
   </programme>
   <programme start="20260615170000 -0500" stop="20260615190000 -0500" channel="boomerang-classic-jpuffle5">
     <title lang="en">Cloudy with a Chance of Meatballs (2009)</title>
+    <sub-title lang="en">Cloudy with a Chance of Meatballs (2009)</sub-title>
+    <desc lang="en">Cloudy with a Chance of Meatballs (2009)</desc>
   </programme>
   <programme start="20260615190000 -0500" stop="20260615210000 -0500" channel="boomerang-classic-jpuffle5">
     <title lang="en">Yogi Bear (2010)</title>
+    <sub-title lang="en">Yogi Bear (2010)</sub-title>
+    <desc lang="en">Yogi Bear (2010)</desc>
   </programme>
   <programme start="20260615210000 -0500" stop="20260615213000 -0500" channel="boomerang-classic-jpuffle5">
     <title lang="en">Dragon Ball Z Kai: The Final Chapters</title>
@@ -39,19 +45,29 @@
     <desc lang="en">What Happened, Piccolo? An Unexpected Outcome in the First Round</desc>
   </programme>
   <programme start="20260615213000 -0500" stop="20260615220000 -0500" channel="boomerang-classic-jpuffle5">
-    <title lang="en">An Eerie Entity Who Exactly Is Spopovitch?</title>
+    <title lang="en">Dragon Ball Z Kai: The Final Chapters</title>
+    <sub-title lang="en">An Eerie Entity Who Exactly Is Spopovitch?</sub-title>
+    <desc lang="en">An Eerie Entity Who Exactly Is Spopovitch?</desc>
   </programme>
   <programme start="20260615220000 -0500" stop="20260615223000 -0500" channel="boomerang-classic-jpuffle5">
-    <title lang="en">Videl Battered! Gohan's Fury Reaches Its Limit!</title>
+    <title lang="en">Dragon Ball Z Kai: The Final Chapters</title>
+    <sub-title lang="en">Videl Battered! Gohan's Fury Reaches Its Limit!</sub-title>
+    <desc lang="en">Videl Battered! Gohan's Fury Reaches Its Limit!</desc>
   </programme>
   <programme start="20260615223000 -0500" stop="20260615230000 -0500" channel="boomerang-classic-jpuffle5">
-    <title lang="en">A Creeping Conspiracy! The Target is Gohan</title>
+    <title lang="en">Dragon Ball Z Kai: The Final Chapters</title>
+    <sub-title lang="en">A Creeping Conspiracy! The Target is Gohan</sub-title>
+    <desc lang="en">A Creeping Conspiracy! The Target is Gohan</desc>
   </programme>
   <programme start="20260615230000 -0500" stop="20260615233000 -0500" channel="boomerang-classic-jpuffle5">
-    <title lang="en">The Terrifying Secret of the Majin. The Mastermind Revealed!</title>
+    <title lang="en">Dragon Ball Z Kai: The Final Chapters</title>
+    <sub-title lang="en">The Terrifying Secret of the Majin. The Mastermind Revealed!</sub-title>
+    <desc lang="en">The Terrifying Secret of the Majin. The Mastermind Revealed!</desc>
   </programme>
   <programme start="20260615233000 -0500" stop="20260616000000 -0500" channel="boomerang-classic-jpuffle5">
-    <title lang="en">The Nefarious Wizard Babidi And Demon King Dabura's Trap</title>
+    <title lang="en">Dragon Ball Z Kai: The Final Chapters</title>
+    <sub-title lang="en">The Nefarious Wizard Babidi And Demon King Dabura's Trap</sub-title>
+    <desc lang="en">The Nefarious Wizard Babidi And Demon King Dabura's Trap</desc>
   </programme>
   <programme start="20260616000000 -0500" stop="20260616003000 -0500" channel="boomerang-classic-jpuffle5">
     <title lang="en">Leo the Lion (Onward, Kimba!)</title>
@@ -64,7 +80,9 @@
     <desc lang="en">Simon Says "Be My Valentine" (Part 1) / Jail Break / Tale of a Tiger / Simon Says "Be My Valentine" (Part 2)</desc>
   </programme>
   <programme start="20260616010000 -0500" stop="20260616013000 -0500" channel="boomerang-classic-jpuffle5">
-    <title lang="en">Simon Says "Be My Valentine" (Part 3) / Kitchen Capers / Seeing Stars / Honey Bees / Simon Says "Be My Valentine" (Part 4)</title>
+    <title lang="en">Underdog</title>
+    <sub-title lang="en">Simon Says "Be My Valentine" (Part 3) / Kitchen Capers / Seeing Stars / Honey Bees / Simon Says "Be My Valentine" (Part 4)</sub-title>
+    <desc lang="en">Simon Says "Be My Valentine" (Part 3) / Kitchen Capers / Seeing Stars / Honey Bees / Simon Says "Be My Valentine" (Part 4)</desc>
   </programme>
   <programme start="20260616013000 -0500" stop="20260616020000 -0500" channel="boomerang-classic-jpuffle5">
     <title lang="en">Space Ghost: Coast to Coast</title>
@@ -72,7 +90,9 @@
     <desc lang="en">Brilliant Number Two / Telethon</desc>
   </programme>
   <programme start="20260616020000 -0500" stop="20260616023000 -0500" channel="boomerang-classic-jpuffle5">
-    <title lang="en">Dimethylpyrimidinol Bisulfite / Joshua</title>
+    <title lang="en">Space Ghost: Coast to Coast</title>
+    <sub-title lang="en">Dimethylpyrimidinol Bisulfite / Joshua</sub-title>
+    <desc lang="en">Dimethylpyrimidinol Bisulfite / Joshua</desc>
   </programme>
   <programme start="20260616023000 -0500" stop="20260616030000 -0500" channel="boomerang-classic-jpuffle5">
     <title lang="en">Centurions</title>
@@ -165,9 +185,13 @@
   </programme>
   <programme start="20260616150000 -0500" stop="20260616170000 -0500" channel="boomerang-classic-jpuffle5">
     <title lang="en">Dr. Suess' The Lorax (2012)</title>
+    <sub-title lang="en">Dr. Suess' The Lorax (2012)</sub-title>
+    <desc lang="en">Dr. Suess' The Lorax (2012)</desc>
   </programme>
   <programme start="20260616170000 -0500" stop="20260616190000 -0500" channel="boomerang-classic-jpuffle5">
     <title lang="en">Yogi Bear (2010)</title>
+    <sub-title lang="en">Yogi Bear (2010)</sub-title>
+    <desc lang="en">Yogi Bear (2010)</desc>
   </programme>
   <programme start="20260616190000 -0500" stop="20260616193000 -0500" channel="boomerang-classic-jpuffle5">
     <title lang="en">Augie Doggie</title>
@@ -187,33 +211,37 @@
     <desc lang="en">Don't Sell Super Saiyans Short! Vegeta and Goku's Full-Bore Power!</desc>
   </programme>
   <programme start="20260616213000 -0500" stop="20260616220000 -0500" channel="boomerang-classic-jpuffle5">
-    <title lang="en">Whither Victory? A Battle Royal Championship Match!</title>
+    <title lang="en">Dragon Ball Z Kai: The Final Chapters</title>
+    <sub-title lang="en">Whither Victory? A Battle Royal Championship Match!</sub-title>
+    <desc lang="en">Whither Victory? A Battle Royal Championship Match!</desc>
   </programme>
   <programme start="20260616220000 -0500" stop="20260616223000 -0500" channel="boomerang-classic-jpuffle5">
-    <title lang="en">Stunning Youngsters! No. 18's Uphill Battle</title>
+    <title lang="en">Dragon Ball Z Kai: The Final Chapters</title>
+    <sub-title lang="en">Stunning Youngsters! No. 18's Uphill Battle</sub-title>
+    <desc lang="en">Stunning Youngsters! No. 18's Uphill Battle</desc>
   </programme>
   <programme start="20260616223000 -0500" stop="20260616230000 -0500" channel="boomerang-classic-jpuffle5">
-    <title lang="en">Enter the Headliner! The Looming Demon King!</title>
+    <title lang="en">Dragon Ball Z Kai: The Final Chapters</title>
+    <sub-title lang="en">Enter the Headliner! The Looming Demon King!</sub-title>
+    <desc lang="en">Enter the Headliner! The Looming Demon King!</desc>
   </programme>
   <programme start="20260616230000 -0500" stop="20260616233000 -0500" channel="boomerang-classic-jpuffle5">
-    <title lang="en">A Heart of Evil Awakened Vegeta, Prince of Destruction</title>
+    <title lang="en">Dragon Ball Z Kai: The Final Chapters</title>
+    <sub-title lang="en">A Heart of Evil Awakened Vegeta, Prince of Destruction</sub-title>
+    <desc lang="en">A Heart of Evil Awakened Vegeta, Prince of Destruction</desc>
   </programme>
   <programme start="20260616233000 -0500" stop="20260617000000 -0500" channel="boomerang-classic-jpuffle5">
-    <title lang="en">I Am the Strongest! The Clash of Goku vs. Vegeta</title>
+    <title lang="en">Dragon Ball Z Kai: The Final Chapters</title>
+    <sub-title lang="en">I Am the Strongest! The Clash of Goku vs. Vegeta</sub-title>
+    <desc lang="en">I Am the Strongest! The Clash of Goku vs. Vegeta</desc>
   </programme>
   <programme start="20260617000000 -0500" stop="20260617003000 -0500" channel="boomerang-classic-jpuffle5">
     <title lang="en">Leo the Lion (Onward, Kimba!)</title>
   </programme>
-  <programme start="20260617003000 -0500" stop="20260617010000 -0500" channel="boomerang-classic-jpuffle5">
+  <programme start="20260617003000 -0500" stop="20260617013000 -0500" channel="boomerang-classic-jpuffle5">
     <title lang="en">Underdog</title>
   </programme>
-  <programme start="20260617010000 -0500" stop="20260617013000 -0500" channel="boomerang-classic-jpuffle5">
-    <title lang="en">Underdog</title>
-  </programme>
-  <programme start="20260617013000 -0500" stop="20260617020000 -0500" channel="boomerang-classic-jpuffle5">
-    <title lang="en">Powerpuff Girls Z</title>
-  </programme>
-  <programme start="20260617020000 -0500" stop="20260617023000 -0500" channel="boomerang-classic-jpuffle5">
+  <programme start="20260617013000 -0500" stop="20260617023000 -0500" channel="boomerang-classic-jpuffle5">
     <title lang="en">Powerpuff Girls Z</title>
   </programme>
   <programme start="20260617023000 -0500" stop="20260617030000 -0500" channel="boomerang-classic-jpuffle5">
@@ -279,7 +307,7 @@
   <programme start="20260617123000 -0500" stop="20260617130000 -0500" channel="boomerang-classic-jpuffle5">
     <title lang="en">Yogi Bear</title>
   </programme>
-  <programme start="20260617130000 -0500" stop="20260617130855 -0500" channel="boomerang-classic-jpuffle5">
+  <programme start="20260617130000 -0500" stop="20260617132041 -0500" channel="boomerang-classic-jpuffle5">
     <title lang="en">Huckleberry Hound</title>
   </programme>
 </tv>

@@ -6,6 +6,7 @@ import xml.etree.ElementTree as ET
 import requests
 from bs4 import BeautifulSoup
 
+
 WIKI_API = "https://jpuffle5-boomerang-archives.fandom.com/api.php"
 
 CHANNEL_ID = "boomerang-classic-jpuffle5"
@@ -14,9 +15,11 @@ CHANNEL_ICON = "http://drewlive2423.duckdns.org:9000/Logos/Boomerang.png"
 EPG_URL = "https://cjrudermedia-1.github.io/boomerang-classic-epg/epg.xml"
 
 SCHEDULE_TIMEZONE = "America/Chicago"
-# TiviMate showed the generated guide one hour behind the live stream/schedule.
-# This shifts programme start/stop times forward by one hour while keeping Central time.
-EPG_TIME_SHIFT_HOURS = 1
+
+# TiviMate is currently showing the generated guide two hours ahead.
+# The previous value was +1. Changing this to -1 moves the output back by 2 hours.
+EPG_TIME_SHIFT_HOURS = -1
+
 HOURS_AHEAD = 48
 
 
@@ -70,9 +73,9 @@ def extract_table_grid(table):
     """
     Return a list of rows with rowspan and colspan expanded.
 
-    Fandom schedule tables sometimes use rowspans for the Show column. Without
-    expanding those rowspans, continuation rows can shift left and the episode
-    text can be mistaken for the show title.
+    Fandom schedule tables sometimes use rowspans for the Show column.
+    Without expanding those rowspans, continuation rows can shift left and
+    the episode text can be mistaken for the show title.
     """
     grid = []
     active_rowspans = {}
@@ -87,8 +90,10 @@ def extract_table_grid(table):
                 span = active_rowspans[col_index]
                 row.append(span["text"])
                 span["rows_left"] -= 1
+
                 if span["rows_left"] <= 0:
                     del active_rowspans[col_index]
+
                 col_index += 1
 
             text = cell.get_text(" ", strip=True)
@@ -97,6 +102,7 @@ def extract_table_grid(table):
 
             for offset in range(colspan):
                 row.append(text)
+
                 if rowspan > 1:
                     active_rowspans[col_index + offset] = {
                         "rows_left": rowspan - 1,
@@ -109,8 +115,10 @@ def extract_table_grid(table):
             span = active_rowspans[col_index]
             row.append(span["text"])
             span["rows_left"] -= 1
+
             if span["rows_left"] <= 0:
                 del active_rowspans[col_index]
+
             col_index += 1
 
         if row:
@@ -153,12 +161,11 @@ def get_schedule_rows_for_date(date_obj):
             show = row[1].strip() if len(row) > 1 else ""
             episode = row[2].strip() if len(row) > 2 else ""
 
-            # If a row is only a blank time marker inside a movie block, ignore it.
-            # The XMLTV stop time for the movie will extend to the next real programme.
             if not show:
                 continue
 
             hour, minute = parsed_time
+
             start_time = datetime(
                 date_obj.year,
                 date_obj.month,
@@ -179,15 +186,22 @@ def get_schedule_rows_for_date(date_obj):
 
 def merge_repeated_blocks(rows):
     """
-    Merge adjacent identical rows. This keeps long movies from showing as several
-    separate 30-minute entries when the site repeats the same title through a rowspan.
-    It does not merge continuation episodes because those have different subtitles.
+    Merge adjacent identical rows.
+
+    This keeps long movies from showing as several separate 30-minute entries
+    when the site repeats the same title through a rowspan. It does not merge
+    continuation episodes because those have different subtitles.
     """
     merged = []
 
     for row in rows:
-        if merged and row["show"] == merged[-1]["show"] and row["episode"] == merged[-1]["episode"]:
+        if (
+            merged
+            and row["show"] == merged[-1]["show"]
+            and row["episode"] == merged[-1]["episode"]
+        ):
             continue
+
         merged.append(row)
 
     return merged

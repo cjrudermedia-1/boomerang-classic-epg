@@ -153,7 +153,8 @@ def build_epg():
     all_rows.sort(key=lambda row: row["start"])
 
     tv = ET.Element("tv", {
-        "generator-info-name": "jpuffle5-boomerang-fandom-epg"
+        "generator-info-name": "jpuffle5-boomerang-fandom-epg",
+        "generator-info-url": "https://raw.githubusercontent.com/cjrudermedia-1/boomerang-classic-epg/main/epg.xml"
     })
 
     channel = ET.SubElement(tv, "channel", {"id": CHANNEL_ID})

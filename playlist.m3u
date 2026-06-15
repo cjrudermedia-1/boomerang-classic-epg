@@ -1,3 +1,3 @@
-#EXTM3U
+#EXTM3U url-tvg="https://raw.githubusercontent.com/cjrudermedia-1/boomerang-classic-epg/main/epg.xml"
 #EXTINF:-1 tvg-id="boomerang-classic-jpuffle5" tvg-name="Boomerang Classic" tvg-logo="http://drewlive2423.duckdns.org:9000/Logos/Boomerang.png" group-title="DrewLive Fan Made TV",Boomerang Classic
 https://rumble.com/live-hls-dvr/78ivl8/playlist.m3u8?

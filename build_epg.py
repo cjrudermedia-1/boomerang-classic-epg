@@ -10,12 +10,10 @@ WIKI_API = "https://jpuffle5-boomerang-archives.fandom.com/api.php"
 
 CHANNEL_ID = "boomerang-classic-jpuffle5"
 CHANNEL_NAME = "Boomerang Classic"
-CHANNEL_LOGO = "http://drewlive2423.duckdns.org:9000/Logos/Boomerang.png"
+CHANNEL_ICON = "http://drewlive2423.duckdns.org:9000/Logos/Boomerang.png"
+EPG_URL = "https://raw.githubusercontent.com/cjrudermedia-1/boomerang-classic-epg/main/epg.xml"
 
-# User preference: Central time / Chicago.
 SCHEDULE_TIMEZONE = "America/Chicago"
-
-# Generate the next 48 hours of guide data.
 HOURS_AHEAD = 48
 
 
@@ -33,7 +31,7 @@ def get_page_html(title):
     }
 
     headers = {
-        "User-Agent": "boomerang-classic-epg-builder/1.0"
+        "User-Agent": "boomerang-classic-epg-builder/1.1"
     }
 
     response = requests.get(WIKI_API, params=params, headers=headers, timeout=30)
@@ -65,6 +63,59 @@ def parse_time_to_24_hour(time_text):
     return hour, minute
 
 
+def extract_table_grid(table):
+    """
+    Return a list of rows with rowspan and colspan expanded.
+
+    Fandom schedule tables sometimes use rowspans for the Show column. Without
+    expanding those rowspans, continuation rows can shift left and the episode
+    text can be mistaken for the show title.
+    """
+    grid = []
+    active_rowspans = {}
+
+    for tr in table.find_all("tr"):
+        row = []
+        col_index = 0
+        cells = tr.find_all(["td", "th"])
+
+        for cell in cells:
+            while col_index in active_rowspans:
+                span = active_rowspans[col_index]
+                row.append(span["text"])
+                span["rows_left"] -= 1
+                if span["rows_left"] <= 0:
+                    del active_rowspans[col_index]
+                col_index += 1
+
+            text = cell.get_text(" ", strip=True)
+            rowspan = int(cell.get("rowspan", 1) or 1)
+            colspan = int(cell.get("colspan", 1) or 1)
+
+            for offset in range(colspan):
+                row.append(text)
+                if rowspan > 1:
+                    active_rowspans[col_index + offset] = {
+                        "rows_left": rowspan - 1,
+                        "text": text,
+                    }
+
+            col_index += colspan
+
+        while col_index in active_rowspans:
+            span = active_rowspans[col_index]
+            row.append(span["text"])
+            span["rows_left"] -= 1
+            if span["rows_left"] <= 0:
+                del active_rowspans[col_index]
+            col_index += 1
+
+        if row:
+            grid.append(row)
+
+    return grid
+
+
 def get_schedule_rows_for_date(date_obj):
     timezone = ZoneInfo(SCHEDULE_TIMEZONE)
     title = date_to_page_title(date_obj)
@@ -76,46 +127,35 @@ def get_schedule_rows_for_date(date_obj):
     soup = BeautifulSoup(page_html, "html.parser")
     rows = []
 
-    last_show = ""
-    last_episode = ""
-
     for table in soup.find_all("table"):
         header_text = table.get_text(" ", strip=True).lower()
 
         if "time" not in header_text or "show" not in header_text:
             continue
 
-        for tr in table.find_all("tr"):
-            cells = [cell.get_text(" ", strip=True) for cell in tr.find_all(["td", "th"])]
+        grid = extract_table_grid(table)
 
-            if len(cells) < 2:
+        for row in grid:
+            if len(row) < 2:
                 continue
 
-            if cells[0].strip().lower() == "time":
+            if row[0].strip().lower() == "time":
                 continue
 
-            parsed_time = parse_time_to_24_hour(cells[0])
+            parsed_time = parse_time_to_24_hour(row[0])
 
             if parsed_time is None:
                 continue
 
-            hour, minute = parsed_time
+            show = row[1].strip() if len(row) > 1 else ""
+            episode = row[2].strip() if len(row) > 2 else ""
 
-            show = cells[1].strip() if len(cells) > 1 else ""
-            episode = cells[2].strip() if len(cells) > 2 else ""
-
-            # Some long movies/specials may have blank continuation rows.
-            # This keeps the same title going until the next filled-in title appears.
-            if show:
-                last_show = show
-                last_episode = episode
-            else:
-                show = last_show
-                episode = last_episode
-
+            # If a row is only a blank time marker inside a movie block, ignore it.
+            # The XMLTV stop time for the movie will extend to the next real programme.
             if not show:
                 continue
 
+            hour, minute = parsed_time
             start_time = datetime(
                 date_obj.year,
                 date_obj.month,
@@ -132,6 +172,22 @@ def get_schedule_rows_for_date(date_obj):
             })
 
     return rows
+
+
+def merge_repeated_blocks(rows):
+    """
+    Merge adjacent identical rows. This keeps long movies from showing as several
+    separate 30-minute entries when the site repeats the same title through a rowspan.
+    It does not merge continuation episodes because those have different subtitles.
+    """
+    merged = []
+
+    for row in rows:
+        if merged and row["show"] == merged[-1]["show"] and row["episode"] == merged[-1]["episode"]:
+            continue
+        merged.append(row)
+
+    return merged
 
 
 def xmltv_datetime(dt):
@@ -151,15 +207,16 @@ def build_epg():
         all_rows.extend(get_schedule_rows_for_date(date_obj))
 
     all_rows.sort(key=lambda row: row["start"])
+    all_rows = merge_repeated_blocks(all_rows)
 
     tv = ET.Element("tv", {
         "generator-info-name": "jpuffle5-boomerang-fandom-epg",
-        "generator-info-url": "https://raw.githubusercontent.com/cjrudermedia-1/boomerang-classic-epg/main/epg.xml"
+        "generator-info-url": EPG_URL,
     })
 
     channel = ET.SubElement(tv, "channel", {"id": CHANNEL_ID})
     ET.SubElement(channel, "display-name").text = CHANNEL_NAME
-    ET.SubElement(channel, "icon", {"src": CHANNEL_LOGO})
+    ET.SubElement(channel, "icon", {"src": CHANNEL_ICON})
 
     for index, row in enumerate(all_rows):
         start = row["start"]

@@ -11,9 +11,12 @@ WIKI_API = "https://jpuffle5-boomerang-archives.fandom.com/api.php"
 CHANNEL_ID = "boomerang-classic-jpuffle5"
 CHANNEL_NAME = "Boomerang Classic"
 CHANNEL_ICON = "http://drewlive2423.duckdns.org:9000/Logos/Boomerang.png"
-EPG_URL = "https://raw.githubusercontent.com/cjrudermedia-1/boomerang-classic-epg/main/epg.xml"
+EPG_URL = "https://cjrudermedia-1.github.io/boomerang-classic-epg/epg.xml"
 
 SCHEDULE_TIMEZONE = "America/Chicago"
+# TiviMate showed the generated guide one hour behind the live stream/schedule.
+# This shifts programme start/stop times forward by one hour while keeping Central time.
+EPG_TIME_SHIFT_HOURS = 1
 HOURS_AHEAD = 48
 
 
@@ -163,7 +166,7 @@ def get_schedule_rows_for_date(date_obj):
                 hour,
                 minute,
                 tzinfo=timezone,
-            )
+            ) + timedelta(hours=EPG_TIME_SHIFT_HOURS)
 
             rows.append({
                 "start": start_time,
@@ -201,8 +204,8 @@ def build_epg():
 
     all_rows = []
 
-    # Pull today plus the next 3 days so the next 48 hours are covered.
-    for day_offset in range(0, 4):
+    # Pull yesterday through the next 4 days so shifted times around midnight are covered.
+    for day_offset in range(-1, 5):
         date_obj = (now + timedelta(days=day_offset)).date()
         all_rows.extend(get_schedule_rows_for_date(date_obj))
 

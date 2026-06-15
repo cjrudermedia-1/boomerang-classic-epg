@@ -1,4 +1,4 @@
-name: Build Boomerang Classic EPG
+name: Build and Publish Boomerang Classic EPG
 
 on:
   schedule:
@@ -6,7 +6,13 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -27,10 +33,34 @@ jobs:
       - name: Build EPG
         run: python build_epg.py
 
-      - name: Save updated EPG
+      - name: Prepare public site files
         run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-          git add epg.xml
-          git diff --cached --quiet && echo "No EPG changes" || git commit -m "Update EPG"
-          git push
+          mkdir public_site
+          cp epg.xml public_site/epg.xml
+          cp playlist.m3u public_site/playlist.m3u
+          cat > public_site/index.html <<'EOF'
+          <!doctype html>
+          <html>
+            <head>
+              <meta charset="utf-8">
+              <title>Boomerang Classic EPG</title>
+            </head>
+            <body>
+              <h1>Boomerang Classic EPG</h1>
+              <p><a href="epg.xml">EPG XMLTV file</a></p>
+              <p><a href="playlist.m3u">Playlist M3U file</a></p>
+            </body>
+          </html>
+          EOF
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload GitHub Pages files
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: public_site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

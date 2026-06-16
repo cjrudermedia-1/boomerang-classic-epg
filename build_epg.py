@@ -16,8 +16,8 @@ EPG_URL = "https://cjrudermedia-1.github.io/boomerang-classic-epg/epg.xml"
 
 SCHEDULE_TIMEZONE = "America/Chicago"
 
-# TiviMate is currently showing the generated guide two hours ahead.
-# The previous value was +1. Changing this to -1 moves the output back by 2 hours.
+# TiviMate showed the generated guide two hours ahead after the previous +1 setting.
+# This value moves the published EPG one hour earlier than the source schedule.
 EPG_TIME_SHIFT_HOURS = -1
 
 HOURS_AHEAD = 48
@@ -37,11 +37,12 @@ def get_page_html(title):
     }
 
     headers = {
-        "User-Agent": "boomerang-classic-epg-builder/1.1"
+        "User-Agent": "boomerang-classic-epg-builder/1.2"
     }
 
     response = requests.get(WIKI_API, params=params, headers=headers, timeout=30)
     response.raise_for_status()
+
     data = response.json()
 
     if "error" in data:
